@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Gwendolyn Goetz</Authors>
+    <PackageId>PurpleOrchid.Common</PackageId>
+    <Description>Common helpers, extension methods, and classes</Description>
+    <PackageLicenseUrl>https://github.com/gwendolyngoetz/PurpleOrchid.Common/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright />
+    <PackageProjectUrl>https://github.com/gwendolyngoetz/PurpleOrchid.Common</PackageProjectUrl>
+    <Company />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="newtonsoft.json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>
