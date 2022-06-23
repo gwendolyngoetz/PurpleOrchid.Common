@@ -7,10 +7,10 @@
     <Authors>Gwendolyn Goetz</Authors>
     <PackageId>PurpleOrchid.Common</PackageId>
     <Description>Common helpers, extension methods, and classes</Description>
-    <PackageLicenseUrl>https://github.com/gwendolyngoetz/PurpleOrchid.Common/blob/master/LICENSE</PackageLicenseUrl>
     <Copyright />
     <PackageProjectUrl>https://github.com/gwendolyngoetz/PurpleOrchid.Common</PackageProjectUrl>
     <Company />
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -20,7 +20,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="newtonsoft.json" Version="11.0.2" />
+    <PackageReference Include="newtonsoft.json" Version="13.0.1" />
   </ItemGroup>
 
 </Project>
