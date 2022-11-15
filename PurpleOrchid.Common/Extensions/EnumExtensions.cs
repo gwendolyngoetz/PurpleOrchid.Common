@@ -17,7 +17,7 @@ namespace PurpleOrchid.Common.Extensions
 
             var fieldInfo = source.GetType().GetField(source.ToString());
 
-            var attributes = (DescriptionAttribute[])fieldInfo.GetCustomAttributes(typeof(DescriptionAttribute), false);
+            var attributes = fieldInfo?.GetCustomAttributes(typeof(DescriptionAttribute), false) as DescriptionAttribute[] ?? new DescriptionAttribute[] {};
 
             if (attributes.Length > 0)
             {
@@ -40,7 +40,7 @@ namespace PurpleOrchid.Common.Extensions
 
             foreach (var item in items)
             {
-                if (!item.ToString().EqualsInsensitive(value))
+                if (!(item.ToString() ?? "").EqualsInsensitive(value))
                 {
                     continue;
                 }

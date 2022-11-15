@@ -1,25 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2000
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurpleOrchid.Common", "PurpleOrchid.Common\PurpleOrchid.Common.csproj", "{3E21A177-A17F-4648-9FC1-4F2DEC20BFB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurpleOrchid.Common", "PurpleOrchid.Common\PurpleOrchid.Common.csproj", "{44FD6C86-0456-4242-83F7-E2FA03916E18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3E21A177-A17F-4648-9FC1-4F2DEC20BFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E21A177-A17F-4648-9FC1-4F2DEC20BFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E21A177-A17F-4648-9FC1-4F2DEC20BFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E21A177-A17F-4648-9FC1-4F2DEC20BFB1}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BC0CE86C-7DC4-4687-868B-0F94DCCADCCA}
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44FD6C86-0456-4242-83F7-E2FA03916E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44FD6C86-0456-4242-83F7-E2FA03916E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44FD6C86-0456-4242-83F7-E2FA03916E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44FD6C86-0456-4242-83F7-E2FA03916E18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
