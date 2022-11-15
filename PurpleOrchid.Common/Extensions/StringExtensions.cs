@@ -1,7 +1,4 @@
-﻿using System;
-using System.Globalization;
-using System.Linq;
-using System.Reflection;
+﻿using System.Globalization;
 using PurpleOrchid.Common.Contracts;
 
 namespace PurpleOrchid.Common.Extensions
@@ -178,7 +175,7 @@ namespace PurpleOrchid.Common.Extensions
         /// <summary>
         /// Returns null if null or empty. Otherwise the string
         /// </summary>
-        public static string NullIfEmpty(this string source)
+        public static string? NullIfEmpty(this string source)
         {
             if (source.IsNullOrWhiteSpace())
             {
@@ -191,7 +188,7 @@ namespace PurpleOrchid.Common.Extensions
         /// <summary>
         /// Sugar around string.format
         /// </summary>
-        public static string FormatString(this string source, params object[] args)
+        public static string? FormatString(this string source, params object[] args)
         {
             if (source.IsNullOrWhiteSpace())
             {

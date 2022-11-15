@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PurpleOrchid.Common.Extensions
+﻿namespace PurpleOrchid.Common.Extensions
 {
     public static class DateTimeExtensions
     {

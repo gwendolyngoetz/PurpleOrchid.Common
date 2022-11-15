@@ -10,7 +10,7 @@
         public ValidationResult(string name, object value, bool isValid, string message)
         {
             Name = name;
-            Value = value?.ToString();
+            Value = (value?.ToString()) ?? "";
             IsValid = isValid;
             Message = message;
         }

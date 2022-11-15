@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.IO;
+﻿using System.ComponentModel;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Schema;
@@ -29,7 +26,7 @@ namespace PurpleOrchid.Common.Xml
         /// <param name="xmlSource">Path to the xmlSource file</param>
         /// <param name="xmlSchema">Path to the xmlSchema file</param>
         /// <param name="defaultNamespace">Default namespace of the xmlSource/xmlSchema</param>
-        public IEnumerable<XmlSchemaException> Validate(XmlValidatorMode mode, string xmlSource, string xmlSchema, string defaultNamespace = null)
+        public IEnumerable<XmlSchemaException> Validate(XmlValidatorMode mode, string xmlSource, string xmlSchema, string? defaultNamespace = null)
         {
             switch (mode)
             {
@@ -44,7 +41,7 @@ namespace PurpleOrchid.Common.Xml
             }
         }
 
-        private IEnumerable<XmlSchemaException> ValidateFromFileSystem(string xmlSource, string xmlSchema, string defaultNamespace)
+        private IEnumerable<XmlSchemaException> ValidateFromFileSystem(string xmlSource, string xmlSchema, string? defaultNamespace)
         {
             var xmlDocument = new XmlDocument();
             xmlDocument.LoadXml(xmlSource);
@@ -80,7 +77,7 @@ namespace PurpleOrchid.Common.Xml
             return _errors;
         }
 
-        private IEnumerable<XmlSchemaException> ValidateInMemoryXml(string xmlSource, string xmlSchema, string defaultNamespace)
+        private IEnumerable<XmlSchemaException> ValidateInMemoryXml(string xmlSource, string xmlSchema, string? defaultNamespace)
         {
             var xdoc = XDocument.Parse(xmlSource);
             var schemas = new XmlSchemaSet();
@@ -93,7 +90,7 @@ namespace PurpleOrchid.Common.Xml
             return _errors;
         }
 
-        private void OnValidation(object sender, ValidationEventArgs e)
+        private void OnValidation(object? sender, ValidationEventArgs e)
         {
             if (e.Severity == XmlSeverityType.Error || e.Severity == XmlSeverityType.Warning)
             {

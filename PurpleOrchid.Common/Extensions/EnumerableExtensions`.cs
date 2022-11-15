@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using PurpleOrchid.Common.Contracts;
+﻿using PurpleOrchid.Common.Contracts;
 
 namespace PurpleOrchid.Common.Extensions
 {

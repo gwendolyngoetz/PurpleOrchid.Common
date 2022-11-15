@@ -9,7 +9,7 @@ namespace PurpleOrchid.Common.Serialization
             return JsonConvert.SerializeObject(value, CustomJsonSerializerSettings.Instance.Settings);
         }
 
-        public static T Deserialize<T>(string value)
+        public static T? Deserialize<T>(string value)
         {
             return JsonConvert.DeserializeObject<T>(value, CustomJsonSerializerSettings.Instance.Settings);
         }

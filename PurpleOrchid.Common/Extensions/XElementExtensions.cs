@@ -1,5 +1,4 @@
-﻿using System;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
 using PurpleOrchid.Common.Contracts;
 
 namespace PurpleOrchid.Common.Extensions

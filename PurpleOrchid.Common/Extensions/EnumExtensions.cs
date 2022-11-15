@@ -1,7 +1,4 @@
-﻿using System;
-using System.ComponentModel;
-using System.Linq;
-using System.Reflection;
+﻿using System.ComponentModel;
 using PurpleOrchid.Common.Contracts;
 
 namespace PurpleOrchid.Common.Extensions
@@ -32,7 +29,7 @@ namespace PurpleOrchid.Common.Extensions
         /// </summary>
         /// <typeparam name="T">Enum type</typeparam>
         /// <param name="value">String value</param>
-        public static T ParseInsensitiveOrDefault<T>(this string value)
+        public static T? ParseInsensitiveOrDefault<T>(this string value)
         {
             var result = default(T);
 
@@ -40,7 +37,7 @@ namespace PurpleOrchid.Common.Extensions
 
             foreach (var item in items)
             {
-                if (!(item.ToString() ?? "").EqualsInsensitive(value))
+                if (!(item.ToString() ?? string.Empty).EqualsInsensitive(value))
                 {
                     continue;
                 }
